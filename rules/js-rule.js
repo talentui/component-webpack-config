@@ -13,7 +13,8 @@ module.exports = {
             }],
             'react',
             'stage-0'
-        ]
+        ],
+        plugins: ['transform-decorators-legacy']
 
     }
 };

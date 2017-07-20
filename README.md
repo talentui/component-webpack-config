@@ -34,3 +34,5 @@ module.exports = require('../index.js')({
 > entry: 组件的入口文件，必须
 
 > name: library的名字，可不传，默认为package.json中的name字段
+
+> compress: 是否启用压缩，默认为flase

@@ -1,9 +1,9 @@
-const path = require('path')
+const path = require("path");
 const ExtractTextPlugin = require("extract-text-webpack-plugin");
 
-module.exports = function(options) {
+module.exports = function(options = {}) {
     //读取package.json中的name
-    let { entry, name, root } = options;
+    let { entry, name, root, compress } = options;
     if (!entry) {
         console.error("无Entry不打包");
         process.exit(1);
@@ -31,7 +31,18 @@ module.exports = function(options) {
         plugins: [
             new ExtractTextPlugin({
                 filename: "style.css"
-            })
+            }),
+            ...(compress
+                ? [
+                      new (require("webpack")).optimize.UglifyJsPlugin({
+                          compress: {
+                              warnings: false
+                          },
+                          sourceMap: true,
+                          minimize: true
+                      })
+                  ]
+                : [])
         ]
     };
 };
