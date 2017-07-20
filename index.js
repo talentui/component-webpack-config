@@ -3,7 +3,7 @@ const ExtractTextPlugin = require("extract-text-webpack-plugin");
 
 module.exports = function(options) {
     //读取package.json中的name
-    let { entry, name, target, root } = options;
+    let { entry, name, root } = options;
     if (!entry) {
         console.error("无Entry不打包");
         process.exit(1);
