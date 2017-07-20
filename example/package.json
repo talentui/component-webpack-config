@@ -1,0 +1,19 @@
+{
+  "name": "example-component",
+  "version": "1.0.0",
+  "main": "./dist/index.js",
+  "license": "MIT",
+  "author": {
+    "name": "Li Guoming",
+    "email": "liguoming@beisen.com"
+  },
+  "dependencies": {
+    "react": "^15.6.1",
+    "react-dom": "^15.6.1",
+    "url-loader": "^0.5.9",
+    "webpack": "^3.3.0"
+  },
+  "scripts": {
+    "build": "rm -rf dist/* && webpack"
+  }
+}
