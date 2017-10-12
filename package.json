@@ -1,6 +1,6 @@
 {
-  "name": "@beisen/talent-ui-component-webpack-config",
-  "version": "1.0.3",
+  "name": "@talentui/component-webpack-config",
+  "version": "1.0.0",
   "main": "index.js",
   "license": "MIT",
   "author": {
