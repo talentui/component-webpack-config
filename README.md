@@ -2,7 +2,7 @@
 webpack不仅提供了的项目打包的流程，也支持创建一个外部库，同时可以通过webpack强大的插件机制解决加载非js模块的问题。这样使我们开发组件和开发项目有一样的流程和体验。
 
 ## 使用方法
-首先，使用`talent-ui-component-webpack-config`可以通过传递简单的参数，来得到全套的webpack组件开发的配置。所以我们要在组件项目中配置使用webpack.
+首先，使用`@talentui/component-webpack-config`可以通过传递简单的参数，来得到全套的webpack组件开发的配置。所以我们要在组件项目中配置使用webpack.
 
 ### 添加webpack.config.js
 ```js
@@ -16,7 +16,7 @@ module.exports = require('../index.js')({
 ### 开发组件代码
 
 ### 构建项目
-> 在构建项目的时候，`talent-ui-component-webpack-config`会读取项目package.json中的name字段作为library的名字，比如package.json中的名字叫作example-component，那么library就叫做exampleComponent
+> 在构建项目的时候，`@talentui/component-webpack-config`会读取项目package.json中的name字段作为library的名字，比如package.json中的名字叫作example-component，那么library就叫做exampleComponent
 
 > 同时会了达到最好的兼容性，libraryTarget的值设置为了umd。
 
